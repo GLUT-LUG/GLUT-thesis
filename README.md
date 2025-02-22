@@ -2,6 +2,10 @@
 
 Latex Templates of Guilin university of technology
 
+# 编译
+
+参考附带的脚本
+
 # 注意！
 
 模板中的示例由原文件署名作者所有！

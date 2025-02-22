@@ -132,9 +132,18 @@ Just choose `xelatex', no `pdflatex' or `latex' and so on.}
 }
 
 % 设置宋体、黑体、楷体，以支持伪加粗，伪斜体
-\setCJKmainfont{FZShuSong-Z01S}[AutoFakeBold,AutoFakeSlant]
-\setCJKsansfont{FZHei-B01S}[AutoFakeBold,AutoFakeSlant]
-\setCJKmonofont{FZKai-Z03S}[AutoFakeBold,AutoFakeSlant]
+
+% windows
+% windows下使用时应标注字体路径
+\setCJKmainfont{font/FZShuSong-Z01S.ttf}[AutoFakeBold,AutoFakeSlant]
+\setCJKsansfont{font/FZHei-B01S.ttf}[AutoFakeBold,AutoFakeSlant]
+\setCJKmonofont{font/FZKai-Z03S.ttf}[AutoFakeBold,AutoFakeSlant]
+
+% Unix
+% \setCJKmainfont{FZShuSong-Z01S}[AutoFakeBold,AutoFakeSlant]
+% \setCJKsansfont{FZHei-B01S}[AutoFakeBold,AutoFakeSlant]
+% \setCJKmonofont{FZKai-Z03S}[AutoFakeBold,AutoFakeSlant]
+
 %\let\kaishu\relax
 %\newCJKfontfamily\kaishu{KaiTi}[AutoFakeBold,AutoFakeSlant]
 
