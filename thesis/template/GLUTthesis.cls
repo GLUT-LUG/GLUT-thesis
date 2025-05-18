@@ -59,7 +59,7 @@ Just choose `xelatex', no `pdflatex' or `latex' and so on.}
 \newcommand{\sectionbreak}{\clearpage}
 % 超链接 hyperref 的设置
 \RequirePackage{hyperref}
-\hypersetup{colorlinks=true,linkcolor=black,citecolor=black}
+\hypersetup{colorlinks=true,linkcolor=black,citecolor=black,urlcolor=blue}
 % 插入图片
 \RequirePackage{graphicx}
 % 表格
