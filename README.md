@@ -2,11 +2,17 @@
 
 Latex Templates of Guilin university of technology
 
-# 编译
+# 项目结构
 
-参考附带的脚本
+- [note](./note/)
+- [PPT](./PPT/)
+- [论文](./thesis/)
 
-# 注意！
+# 注意
+
+请仔细阅读子目录内的README文件
+
+## 版权声明
 
 模板中的示例由原文件署名作者所有！
 
