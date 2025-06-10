@@ -59,7 +59,7 @@ Just choose `xelatex', no `pdflatex' or `latex' and so on.}
 \newcommand{\sectionbreak}{\clearpage}
 % 超链接 hyperref 的设置
 \RequirePackage{hyperref}
-\hypersetup{colorlinks=true,linkcolor=black,citecolor=black}
+\hypersetup{colorlinks=true,linkcolor=black,citecolor=black,urlcolor=blue}
 % 插入图片
 \RequirePackage{graphicx}
 % 表格
@@ -96,7 +96,28 @@ Just choose `xelatex', no `pdflatex' or `latex' and so on.}
 
 % 参考文献格式 GB/T7714-2015
 % 来自https://github.com/hushidong/biblatex-gb7714-2015
-\RequirePackage[backend=biber,gbpub=false, style=gb7714-2015]{biblatex}
+
+% 原版，半角符号加空格
+% 原版参数：
+% gbpub=true: 不显示“作者不详”
+% url=false: 不显示url
+\RequirePackage[backend=biber,gbpub=false, gbnamefmt=lowercase, doi=false, style=gb7714-2015,url=false]{biblatex}
+
+% 华中师范大学，全角符号不加空格的
+% 不显示url
+% \RequirePackage[backend=biber,gbpub=false, gbnamefmt=lowercase, style=gb7714-CCNU]{biblatex}
+
+% 西北农林科技大学，半角符号加空格
+% 强制显示url
+% \RequirePackage[backend=biber,gbpub=false, gbnamefmt=lowercase, style=gb7714-NWAFU]{biblatex}
+
+% 东南大学，半角符号加空格
+% 强制显示url
+% \RequirePackage[backend=biber,gbpub=false, gbnamefmt=lowercase, style=gb7714-SEU]{biblatex}
+
+% Ntkskwk提供的魔改版，但是不是很能用
+% \RequirePackage[backend=biber, gbpub=false, gbnamefmt=lowercase, url=false, doi=false, style=gb7714-GLUT]{biblatex}
+
 % 使用系统字体
 \usepackage{fontspec}
 % 化学方程式
@@ -204,7 +225,8 @@ Just choose `xelatex', no `pdflatex' or `latex' and so on.}
 				\vskip0.3cm
 				\hfill\makebox[18mm][s]{题目类型:}\underline{\makebox[30mm][c]{\@titlestyle}}
 				\vskip0.3cm
-				\hfill\makebox[35mm][s]{\scalebox{0.8}[1]{（设计、论文、报告）}}\makebox[19mm][c]{}\\
+                % 不需要这个
+				% \hfill\makebox[35mm][s]{\scalebox{0.8}[1]{（设计、论文、报告）}}\makebox[19mm][c]{}\\
 				\vskip0.2cm
 			\end{flushleft}
 	}
@@ -266,6 +288,8 @@ Just choose `xelatex', no `pdflatex' or `latex' and so on.}
 
         \vspace{0.5cm}
 \begin{center}
+% 如果需要手动指定日期 
+% 设计（论文）作者签名：\qquad \qquad \qquad 日期：2025年6月10日	
 设计（论文）作者签名：\qquad \qquad \qquad 日期：\qquad 年 \qquad 月 \qquad 日	
 \end{center}
         
@@ -285,6 +309,9 @@ Just choose `xelatex', no `pdflatex' or `latex' and so on.}
         \vspace{1cm}
 
 \begin{center}
+% 如果需要手动指定日期 
+% \makebox[46mm][s]{设计（论文）作者签名：}\qquad  \qquad \qquad 日期：2025年6月10日\par
+% \makebox[46mm][s]{指导老师签名：}\qquad \qquad \qquad 日期：2025年6月10日	
 \makebox[46mm][s]{设计（论文）作者签名：}\qquad  \qquad \qquad 日期：\qquad 年 \qquad 月 \qquad 日\par
 \makebox[46mm][s]{指导老师签名：}\qquad \qquad \qquad 日期：\qquad 年 \qquad 月 \qquad 日	
 \end{center}
@@ -351,7 +378,7 @@ Just choose `xelatex', no `pdflatex' or `latex' and so on.}
 %               [after-code]%定义标题后的内容
 
 %\newcommand{\chaptername}{第{\thesection}章}
-\titleformat{\section}{\zihao{3} \bfseries \centering}{\,\thesection\,}{1em}{}%\chaptername
+\titleformat{\section}{\zihao{3} \bfseries }{\,\thesection\,}{1em}{}%\chaptername
 \titleformat{\subsection}{\zihao{-3}  \bfseries}{\thesubsection}{1em}{}
 \titleformat{\subsubsection}{\zihao{4}  \bfseries}{\thesubsubsection}{1em}{}
 
@@ -366,21 +393,21 @@ Just choose `xelatex', no `pdflatex' or `latex' and so on.}
 
 \titlecontents{section}
     [0.0em]
-    {\zihao{-4}\bfseries\songti}									
+    {\zihao{-4}\bfseries}
     {\,\thecontentslabel\, \hspace{0.5em}}%第几章
     {}
     {~\titlerule*[0.35pc]{\tiny  \textbullet}~\contentspage}
               
 \titlecontents{subsection}
     [3.6em]
-    {\zihao{-4} \songti} % note that 3.8 = 1.5 + 2.3
+    {\zihao{-4}} % note that 3.8 = 1.5 + 2.3
     {\contentslabel{2.2em}}
     {\hspace*{-3.2em}}
     {~\titlerule*[0.35pc]{\tiny  \textbullet}~\contentspage}
 
 \titlecontents{subsubsection}
     [5.8em]
-    {\zihao{-4} \songti} % note that 3.8 = 1.5 + 2.3
+    {\zihao{-4}} % note that 3.8 = 1.5 + 2.3
     {\contentslabel{3.0em}}
     {\hspace*{-3.2em}}
     {~\titlerule*[0.35pc]{\tiny \textbullet}~\contentspage}
