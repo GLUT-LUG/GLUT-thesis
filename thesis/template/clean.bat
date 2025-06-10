@@ -11,3 +11,4 @@ del *.nav
 del *.xml
 del *.snm
 del *.bcf
+del *.xdv

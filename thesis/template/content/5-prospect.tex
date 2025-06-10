@@ -1,0 +1,37 @@
+\section{化学方程式} 
+
+化学方程式可以直接采用数学式输入，例如: 
+三硝基甲苯(TNT)~C$_6$H$_2$CH$_3$(NO$_2$)$_3$
+为白色或苋色淡黄色针状结晶，无臭，有吸湿性。
+
+很明显，将化学方程式作为数学公式输入很复杂，且十分笨拙。所以本模版引入了mhchem宏包将问题简化。~\verb|\ce|~命令用来输入化学方程式。 如：醋中主要是 \ce{H2O}，含有 \ce{CH3C00-}。\ce{^{277}_{90}Th}元素具有强放射性。
+
+ 化学反应式例子如下：
+ \begin{gather} 
+   \ce{2H2 + O2 ->[\text{燃烧}] 2H2O} \\
+   \ce{N2 + 3H2 <=>T[高温、加压][催化剂] 2NH3}
+ \end{gather}
+
+有机化学式的书写，先简单介绍一下~chemfig~方向的定义，如图~\ref{fig:direction}：
+
+\begin{figure}[ht]
+  \centering
+    \includegraphics[width=0.2\textwidth]{direction.png}
+    \caption{chemfig方向的定义}
+    \label{fig:direction}
+\end{figure}
+
+举个乙烷的例子：
+
+\begin{center}
+  \chemfig{C(-[2]H)(-[4]H)(-[6]H)-C(-[2]H)(-[6]H)-H}
+\end{center}
+
+上述乙烷代码如下：
+{\verb|\chemfig{C(-[2]H)(-[4]H)(-[6]H)-C(-[2]H)(-[6]H)-H}|}
+代码中 (-[X]Y) 内的数字 X 就表示了内容 Y 的位置，其中中括号（[ ]）的位置通常紧跟在化学键（-、= 等）之后。例如2表示的就是向上的方向，4 表示向左，6 表示向右。
+
+再画一个苯环:
+\begin{center}
+  \chemfig{*6(-=-=-=)}
+\end{center}

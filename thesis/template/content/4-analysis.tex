@@ -1,0 +1,66 @@
+\section{公式插入}
+
+公式插入示例如公式(\ref{E.example})所示。
+
+薛定谔方程在一维量子问题中的应用：
+
+（1）一维无限深势阱的势能分布
+
+\begin{equation}
+\displaystyle U(x)=\left\{
+\begin{array}{l@{}}
+0\;\;\quad(0<x<a) \\
+U_0\quad (x\leq0 \;\mbox{或} \;x\geq a)\\ 
+\end{array}\right.
+\label{E.example}
+\end{equation}
+
+其本征能量与本征态为
+\begin{equation}
+\displaystyle U(x)=\left\{
+\begin{array}{l@{}}
+\displaystyle E_n=\frac{\hbar^2k^2}{2m}=\frac{\pi^2\hbar^2}{2ma^2}n^2 \;\;(n=1\mbox{，}2\mbox{，}3\cdots) \\
+\displaystyle \psi _n(x)=\sqrt{\frac{2}{a}}\mathrm{sin}\frac{n\pi}{a}x \;\;\;(0\leq x\leq a) \\ 
+\displaystyle \psi _n(x)=0\quad\quad\quad\quad\quad(x\leq0 \;\mbox{或} \;x\geq a) \\ 
+\end{array}\right.
+\end{equation}
+
+（2）一维谐振子的势能函数$\displaystyle U(x)=\frac{1}{2}kx^2=\frac{1}{2}m\omega^2x^2$，谐振子的定态薛定谔方程为
+
+\begin{equation}
+\displaystyle -\frac{\hbar^2}{2m}\frac{\partial^2\psi}{\partial x^2}+\frac{1}{2}m\omega^2x^2\psi=E \psi
+\end{equation}
+
+其本征能量与本征态为
+\begin{equation}
+\displaystyle E_n=(n+\frac{1}{2})\hbar \omega \;\;(n=0\mbox{，}1\mbox{，}2\cdots)
+\end{equation}
+ 
+\begin{equation}
+	\displaystyle \psi _n(\alpha x)=(\sqrt{\pi}2^nn!)^{-\frac{1}{2}}\mathrm{e}^{-\frac{\alpha^2x^2}{2}} H_n(\alpha x) \;\;(n=0\mbox{，}1\mbox{，}2\cdots)
+\end{equation}
+
+（3）一维方势垒和隧道效应：方势垒的势能为
+\begin{equation}
+	\displaystyle U(x)=\left\{
+\begin{array}{l@{}}
+U_0\quad(0<x<a) \\
+0\;\;\quad( x\leq0 \;\mbox{或} \;x\geq a)\\ 
+\end{array}\right.
+\end{equation}
+
+投射系数为$\displaystyle D=D_0\mathrm{e}^{-2ka}$，其中$\displaystyle k=\sqrt{\frac{2m(U_0-E)}{\hbar^2}}$。
+
+我们还可以轻松打出一个矩阵
+\begin{equation}
+\bm{A}=\begin{bmatrix} %\bm为数学粗体 \hm为更粗的加重体数学负号
+1&2&3&4\\
+11&22&33&44\\
+\end{bmatrix}
+\times\begin{bmatrix}
+22&24\\
+32&34\\
+42&44\\
+52&54\\
+\end{bmatrix}
+\end{equation}

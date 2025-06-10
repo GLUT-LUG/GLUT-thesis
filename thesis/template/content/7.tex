@@ -1,0 +1,124 @@
+\section{图像布局}
+\label{sec.figure}
+\subsection{单图布局}
+
+    这是一段随机插入的文本，用来填充模板布局，感受模板视觉效果。这是一段随机插入的文本，用来填充模板布局，感受模板视觉效果。这是一段随机插入的文本，用来填充模板布局，感受模板视觉效果。这是一段随机插入的文本，用来填充模板布局，感受模板视觉效果。这是一段随机插入的文本，用来填充模板布局，感受模板视觉效果。这是一段随机插入的文本，用来填充模板布局，感受模板视觉效果。
+    
+    这是一段随机插入的文本，用来填充模板布局，感受模板视觉效果。这是一段随机插入的文本，用来填充模板布局，感受模板视觉效果。这是一段随机插入的文本，用来填充模板布局，感受模板视觉效果。这是一段随机插入的文本，用来填充模板布局，感受模板视觉效果。这是一段随机插入的文本，用来填充模板布局，感受模板视觉效果。这是一段随机插入的文本，用来填充模板布局，感受模板视觉效果。
+
+单图布局如图\ref{F.glut_single}所示。
+
+\begin{figure}[hbt]
+\centering
+\includegraphics[width=1.0\textwidth]{banner.jpeg}
+\caption{单图布局示例}
+\label{F.glut_single}
+\end{figure}
+
+\subsection{横排布局}
+
+横排布局如图\ref{F.glut_row}所示。
+
+\begin{figure}[!htb]
+    \centering
+    \begin{subfigure}[t]{0.24\linewidth}
+        \begin{minipage}[b]{1\linewidth}
+        \includegraphics[width=1\linewidth]{glut.png}
+        \caption{第一张}
+        \end{minipage}
+    \end{subfigure}
+    \begin{subfigure}[t]{0.24\linewidth}
+        \begin{minipage}[b]{1\linewidth}
+        \includegraphics[width=1\linewidth]{glut.png}
+        \caption{第二张}
+        \end{minipage}
+    \end{subfigure}
+    \caption{横排布局示例}
+    \label{F.glut_row}
+\end{figure}
+
+    这是一段随机插入的文本，用来填充模板布局，感受模板视觉效果。这是一段随机插入的文本，用来填充模板布局，感受模板视觉效果。这是一段随机插入的文本，用来填充模板布局，感受模板视觉效果。这是一段随机插入的文本，用来填充模板布局，感受模板视觉效果。这是一段随机插入的文本，用来填充模板布局，感受模板视觉效果。这是一段随机插入的文本，用来填充模板布局，感受模板视觉效果。
+    
+    这是一段随机插入的文本，用来填充模板布局，感受模板视觉效果。这是一段随机插入的文本，用来填充模板布局，感受模板视觉效果。这是一段随机插入的文本，用来填充模板布局，感受模板视觉效果。这是一段随机插入的文本，用来填充模板布局，感受模板视觉效果。这是一段随机插入的文本，用来填充模板布局，感受模板视觉效果。这是一段随机插入的文本，用来填充模板布局，感受模板视觉效果。
+
+\subsection{竖排布局}
+竖排布局如图\ref{F.glut_col}所示。
+
+\begin{figure}[!htb]
+    \centering
+    \begin{subfigure}[t]{0.15\linewidth}
+        \captionsetup{justification=centering} %ugly hacks
+        \begin{minipage}[b]{1\linewidth}
+        \includegraphics[width=1\linewidth]{glut.png}
+        \caption{第一张}
+        \end{minipage}
+    \end{subfigure}\\
+    \begin{subfigure}[t]{0.15\linewidth}
+        \captionsetup{justification=centering} %ugly hacks
+        \begin{minipage}[b]{1\linewidth}
+        \includegraphics[width=1\linewidth]{glut.png}
+        \caption{第二张}
+        \end{minipage}
+    \end{subfigure}
+    \caption{竖排布局示例}
+    \label{F.glut_col}
+\end{figure}
+
+    这是一段随机插入的文本，用来填充模板布局，感受模板视觉效果。这是一段随机插入的文本，用来填充模板布局，感受模板视觉效果。这是一段随机插入的文本，用来填充模板布局，感受模板视觉效果。这是一段随机插入的文本，用来填充模板布局，感受模板视觉效果。这是一段随机插入的文本，用来填充模板布局，感受模板视觉效果。这是一段随机插入的文本，用来填充模板布局，感受模板视觉效果。
+    
+    这是一段随机插入的文本，用来填充模板布局，感受模板视觉效果。这是一段随机插入的文本，用来填充模板布局，感受模板视觉效果。这是一段随机插入的文本，用来填充模板布局，感受模板视觉效果。这是一段随机插入的文本，用来填充模板布局，感受模板视觉效果。这是一段随机插入的文本，用来填充模板布局，感受模板视觉效果。这是一段随机插入的文本，用来填充模板布局，感受模板视觉效果。
+
+\subsection{竖排多图横排布局}
+
+\begin{figure}[!htb]
+    \centering
+    \begin{subfigure}[t]{0.13\linewidth}
+        \captionsetup{justification=centering} 
+        \begin{minipage}[b]{1\linewidth}
+        \includegraphics[width=1\linewidth]{glut.png} \vspace{-1ex} \vfill
+        \includegraphics[width=1\linewidth]{glut.png}
+        \caption{第一张}
+        \end{minipage}
+    \end{subfigure}
+    \begin{subfigure}[t]{0.13\linewidth}
+        \captionsetup{justification=centering} 
+        \begin{minipage}[b]{1\linewidth}
+        \includegraphics[width=1\linewidth]{glut.png} \vspace{-1ex} \vfill
+        \includegraphics[width=1\linewidth]{glut.png}
+        \caption{第二张}
+        \end{minipage}
+    \end{subfigure}
+    \caption{竖排多图横排布局}
+    \label{F.glut_col_row}
+\end{figure}
+
+竖排多图横排布局如图\ref{F.glut_col_row}所示。注意看(a)、(b)编号与图关系。
+
+
+\subsection{横排多图竖排布局}
+
+    这是一段随机插入的文本，用来填充模板布局，感受模板视觉效果。这是一段随机插入的文本，用来填充模板布局，感受模板视觉效果。这是一段随机插入的文本，用来填充模板布局，感受模板视觉效果。这是一段随机插入的文本，用来填充模板布局，感受模板视觉效果。这是一段随机插入的文本，用来填充模板布局，感受模板视觉效果。这是一段随机插入的文本，用来填充模板布局，感受模板视觉效果。
+
+\begin{figure}[!htb]
+    \centering
+    \begin{subfigure}[t]{0.3\linewidth}
+        \captionsetup{justification=centering} 
+        \begin{minipage}[b]{1\linewidth}
+        \includegraphics[width=0.45\linewidth]{glut.png}
+        \includegraphics[width=0.45\linewidth]{glut.png}
+        \caption{}
+        \end{minipage}
+    \end{subfigure}\\
+    \begin{subfigure}[t]{0.3\linewidth}
+        \captionsetup{justification=centering} 
+        \begin{minipage}[b]{1\linewidth}
+        \includegraphics[width=0.45\linewidth]{glut.png}
+        \includegraphics[width=0.45\linewidth]{glut.png}
+        \caption{}
+        \end{minipage}
+    \end{subfigure}
+    \caption{横排多图竖排布局}
+    \label{F.glut_row_col}
+\end{figure}
+
+横排多图竖排布局如图\ref{F.glut_row_col}所示。注意看(a)、(b)编号与图关系。
