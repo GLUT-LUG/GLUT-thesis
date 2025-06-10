@@ -4,7 +4,28 @@ Latex Templates of Guilin university of technology
 
 # 编译
 
-参考附带的脚本
+- 使用xelatex
+
+  ```bash
+  xelatex GLUTthesis
+  
+  biber GLUTthesis
+  
+  xelatex GLUTthesis
+  ```
+
+- 使用latexmk
+
+  ```makefile
+  # 需要使用 tlmgr install latexmk 安装 latexmk
+  latexmk -pdf -xelatex .\GLUTthesis.tex
+  ```
+
+- 使用makefile
+
+  ```bash
+  make thesis
+  ```
 
 # 注意！
 

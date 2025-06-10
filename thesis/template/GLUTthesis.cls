@@ -101,6 +101,7 @@ Just choose `xelatex', no `pdflatex' or `latex' and so on.}
 % 原版参数：
 % gbpub=true: 不显示“作者不详”
 % url=false: 不显示url
+% doi=false: 不显示doi
 \RequirePackage[backend=biber,gbpub=false, gbnamefmt=lowercase, doi=false, style=gb7714-2015,url=false]{biblatex}
 
 % 华中师范大学，全角符号不加空格的
