@@ -2,6 +2,18 @@
 
 Latex Templates of Guilin university of technology
 
+# Latex 入门
+
+## 使用教程
+
+[新手教程：从入门到日常使用](https://zhuanlan.zhihu.com/p/456055339)
+
+[如何使用 LaTeX 排版论文](https://github.com/tuna/thulib-latex-talk)
+
+## 下载方式
+
+[清华tuna镜像](https://mirrors.tuna.tsinghua.edu.cn/help/CTAN/)
+
 # 项目结构
 
 - [note](./note/)
